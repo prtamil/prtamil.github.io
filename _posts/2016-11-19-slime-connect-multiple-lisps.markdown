@@ -14,7 +14,7 @@ use slime feature called
 Inorder to do that we need start CommonLisp server.
 
 ##  Swank Server
-You can start another local instance or start swank server on different machine
+You can start another local instance or start swank server on different machine.
 
 ###  Starting Local Instance of Lisp
 
