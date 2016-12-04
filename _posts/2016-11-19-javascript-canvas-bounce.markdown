@@ -52,7 +52,9 @@ Vector.fromAngle = function(angle, magnitude) {
                       magnitude* Math.sin(angle));
 }
 ```
+
 Vector class adds methods such as 
+
 + add
 + multiplyScalar
 + getMagnitude
