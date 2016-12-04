@@ -65,11 +65,13 @@ Vector class adds methods such as
  Movers are objects. I called it as movers. You can rename it as objects.
  The main purpose of it is to handle objects movement.
  Each movers has
+
 + Velocity
 + Location
 + Direction
 
 And we can defince current movement as 
+
 > Position = Location + Velocity
 
 Since this is Bouncing balls once it reaches the boundry we can switch direction
