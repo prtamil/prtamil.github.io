@@ -59,9 +59,10 @@ Vector class adds methods such as
 + multiplyScalar
 + getMagnitude
 + getAngle   
- >   Gets Angle from current position
+ >  Gets Angle from current position
 + fromAngle 
- >   Gets Current Posistion vector from Angle and Magnitude
+ >  Gets Current Posistion vector from Angle and Magnitude
+
 
 #### Movers Class
  Movers are objects. I called it as movers. You can rename it as objects.
@@ -74,7 +75,7 @@ Vector class adds methods such as
 
 And we can defince current movement as 
 
-> Position = Location + Velocity
+>   Position = Location + Velocity
 
 Since this is Bouncing balls once it reaches the boundry we can switch direction
 
@@ -114,10 +115,10 @@ requestAnimationFrame
 function to Draw the sequences on each and every frame.
 We define a Animation Loop with following logic
 
-+ clear();
-+ update();
-+ draw();
-+ queue();
++   clear();
++   update();
++   draw();
++   queue();
 
 ```javascript
 
