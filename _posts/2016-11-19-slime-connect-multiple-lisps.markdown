@@ -13,14 +13,15 @@ use slime feature called
 
 Inorder to do that we need start CommonLisp server.
 
-## Swank Server
+##  Swank Server
 You can start another local instance or start swank server on different machine
-### Starting Local Instance of Lisp
+
+###  Starting Local Instance of Lisp
 ```common-lisp
   (ql:quickload "swank")
   (swank:create-server :port 4005)
 ```
-### Starting Remote Instance via SSH
+###  Starting Remote Instance via SSH
 In order to start Lisp instance on remote machine we need to set '*loopback-interface*' to remote-ip address.
 
 ```common-lisp
@@ -28,8 +29,10 @@ In order to start Lisp instance on remote machine we need to set '*loopback-inte
  (setf swank::*loopback-interface* "192.168.0.5")
   (swank:create-server :port 4005)
 ```
-## Connecting to Different Lisp
+##  Connecting to Different Lisp
+
 So inorder to connect to different lisp just use
+
 > M-x slime-connect
 
 It will ask for IP and port.

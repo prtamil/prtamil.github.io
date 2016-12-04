@@ -59,9 +59,9 @@ Vector class adds methods such as
 + multiplyScalar
 + getMagnitude
 + getAngle   
- >  Gets Angle from current position
+>  Gets Angle from current position
 + fromAngle 
- >  Gets Current Posistion vector from Angle and Magnitude
+>  Gets Current Posistion vector from Angle and Magnitude
 
 
 #### Movers Class
@@ -109,7 +109,7 @@ Mover.prototype.draw = function(ctx){
 #### Drawing Part.
 
 Now the drawing part. we use
-```javascript
+```
 requestAnimationFrame
 ```
 function to Draw the sequences on each and every frame.
