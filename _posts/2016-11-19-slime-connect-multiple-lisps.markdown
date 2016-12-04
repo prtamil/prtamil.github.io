@@ -35,9 +35,11 @@ In order to start Lisp instance on remote machine we need to set '*loopback-inte
 ## Connecting to Different Lisp
 
 So inorder to connect to different lisp just use
->```common-lisp
-> M-x slime-connect
->```
+>
+```common-lisp
+    M-x slime-connect
+```
+
 
 It will ask for IP and port.
 
