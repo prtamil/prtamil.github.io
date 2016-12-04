@@ -97,13 +97,13 @@ use slime feature called</p>
 
 <h2 id="swank-server">Swank Server</h2>
 <p>You can start another local instance or start swank server on different machine.</p>
-
 <h3 id="starting-local-instance-of-lisp">Starting Local Instance of Lisp</h3>
 
 <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code>  <span class="p">(</span><span class="nv">ql:quickload</span> <span class="s">"swank"</span><span class="p">)</span>
   <span class="p">(</span><span class="nv">swank:create-server</span> <span class="ss">:port</span> <span class="mi">4005</span><span class="p">)</span>
 </code></pre>
 </div>
+
 <h3 id="starting-remote-instance-via-ssh">Starting Remote Instance via SSH</h3>
 
 <p>In order to start Lisp instance on remote machine we need to set ‘<em>loopback-interface</em>’ to remote-ip address.</p>
@@ -113,12 +113,14 @@ use slime feature called</p>
   <span class="p">(</span><span class="nv">swank:create-server</span> <span class="ss">:port</span> <span class="mi">4005</span><span class="p">)</span>
 </code></pre>
 </div>
+
 <h2 id="connecting-to-different-lisp">Connecting to Different Lisp</h2>
 
 <p>So inorder to connect to different lisp just use</p>
-
 <blockquote>
-  <p>M-x slime-connect</p>
+  <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code><span class="nv">M-x</span> <span class="nv">slime-connect</span>
+</code></pre>
+  </div>
 </blockquote>
 
 <p>It will ask for IP and port.</p>
