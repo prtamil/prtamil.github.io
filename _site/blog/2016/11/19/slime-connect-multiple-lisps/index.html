@@ -28,8 +28,8 @@
   
   <meta name="keywords" content="" />
 
-  <link rel="canonical" href="http://localhost:4000/blog/2016/11/19/slime-connect-multiple-lisps/">
-  <link rel="alternate" type="application/rss+xml" title="On Programming, Computer Graphics <br>and Artificial Intelligence" href="http://localhost:4000/feed.xml" />
+  <link rel="canonical" href="http://prtamil.github.io/blog/2016/11/19/slime-connect-multiple-lisps/">
+  <link rel="alternate" type="application/rss+xml" title="On Programming, Computer Graphics <br>and Artificial Intelligence" href="http://prtamil.github.io/feed.xml" />
   <span itemprop='author'><meta name="author" content="Tamilselvan P.R."><span itemprop='author'></span>
 
   <link href="/favicon.png" rel="icon">
@@ -99,11 +99,13 @@ use slime feature called</p>
 <p>You can start another local instance or start swank server on different machine</p>
 
 <h3 id="starting-local-instance-of-lisp">Starting Local Instance of Lisp</h3>
+
 <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code>  <span class="p">(</span><span class="nv">ql:quickload</span> <span class="s">"swank"</span><span class="p">)</span>
   <span class="p">(</span><span class="nv">swank:create-server</span> <span class="ss">:port</span> <span class="mi">4005</span><span class="p">)</span>
 </code></pre>
 </div>
 <h3 id="starting-remote-instance-via-ssh">Starting Remote Instance via SSH</h3>
+
 <p>In order to start Lisp instance on remote machine we need to set ‘<em>loopback-interface</em>’ to remote-ip address.</p>
 
 <div class="language-common-lisp highlighter-rouge"><pre class="highlight"><code> <span class="p">(</span><span class="nv">ql:quickload</span> <span class="s">"swank"</span><span class="p">)</span>
