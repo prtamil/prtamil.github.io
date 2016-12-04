@@ -4,7 +4,7 @@ title: Javascript Canvas Bouncing Balls
 date: 2016-11-19 12:46
 comments: true
 external-url:
-categories: Javascript, Demos
+categories: Javascript
 ---
 ### Javascript Canvas tutorial
 This is my first javascript canvas demo. We will discuss about how to building it.
@@ -100,13 +100,16 @@ Mover.prototype.draw = function(ctx){
     ctx.fill();
 }
 ```
+
 #### Drawing Part.
+
 Now the drawing part. we use
 ```javascript
 requestAnimationFrame
 ```
 function to Draw the sequences on each and every frame.
 We define a Animation Loop with following logic
+
 + clear();
 + update();
 + draw();
