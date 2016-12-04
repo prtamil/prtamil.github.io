@@ -9,8 +9,9 @@ categories: CommonLisp
 When you are using slime to connect emacs the default 'M-x slime' will connect to local
 instance of CommonLisp. But If you want to connect to Lisps in different machine you can
 use slime feature called
-> M-x slime-connect
 
+> M-x slime-connect
+                             
 Inorder to do that we need start CommonLisp server.
 
 ## Swank Server
