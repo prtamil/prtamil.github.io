@@ -12,6 +12,3 @@ You can Installit by
                              
 It details about how to control Other processes in Python
 
-## Swank Server
-You can start another local instance or start swank server on different machine.
-### Starting Local Instance of Lisp
