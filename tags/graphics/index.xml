@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphics on Coding For Life</title>
+    <link>https://prtamil.github.io/tags/graphics/</link>
+    <description>Recent content in Graphics on Coding For Life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>prtamil@gmail.com (Tamilselvan.Rangasami)</managingEditor>
+    <webMaster>prtamil@gmail.com (Tamilselvan.Rangasami)</webMaster>
+    <lastBuildDate>Sat, 19 Nov 2016 12:46:43 +1230</lastBuildDate>
+    
+	<atom:link href="https://prtamil.github.io/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Javascript Canvas Bouncing Balls</title>
+      <link>https://prtamil.github.io/post/2016-11-19-javascript-canvas/</link>
+      <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
+      <author>prtamil@gmail.com (Tamilselvan.Rangasami)</author>
+      <guid>https://prtamil.github.io/post/2016-11-19-javascript-canvas/</guid>
+      <description>Javascript Canvas tutorial This is my first javascript canvas demo. We will discuss about how to building it.
+ no canvas  Toggle Demo    
+Lets start with Simple Vector Class  function Vector(x,y){ this.x = x || 0; this.y = y || 0; } //Add another vector Vector.prototype.add = function(vector) { this.x += vector.x; this.y += vector.y; } //multiply with scalar Vector.prototype.multiplyScalar = function(scalar){ this.x *= scalar; this.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coding For Life</title>
-    <link>https://prtamil.github.io/</link>
-    <description>Recent content on Coding For Life</description>
+    <title>Posts on Coding For Life</title>
+    <link>https://prtamil.github.io/post/</link>
+    <description>Recent content in Posts on Coding For Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>prtamil@gmail.com (Tamilselvan.Rangasami)</managingEditor>
     <webMaster>prtamil@gmail.com (Tamilselvan.Rangasami)</webMaster>
     <lastBuildDate>Sat, 19 Nov 2016 12:46:45 +1230</lastBuildDate>
     
-	<atom:link href="https://prtamil.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://prtamil.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -34,22 +34,6 @@ Starting Local Instance of Lisp  (ql:quickload &amp;#34;swank&amp;#34;) (swank:c
       <description>Javascript Canvas tutorial This is my first javascript canvas demo. We will discuss about how to building it.
  no canvas  Toggle Demo    
 Lets start with Simple Vector Class  function Vector(x,y){ this.x = x || 0; this.y = y || 0; } //Add another vector Vector.prototype.add = function(vector) { this.x += vector.x; this.y += vector.y; } //multiply with scalar Vector.prototype.multiplyScalar = function(scalar){ this.x *= scalar; this.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://prtamil.github.io/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>prtamil@gmail.com (Tamilselvan.Rangasami)</author>
-      <guid>https://prtamil.github.io/page/about/</guid>
-      <description>My name is
- Tamilselvan.Rangasami.
- And I&amp;rsquo;m a
- Programmer
- by Vocation
-Here&amp;rsquo;s my
- Resume
- </description>
     </item>
     
   </channel>

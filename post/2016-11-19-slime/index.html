@@ -5,20 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Coding For Life</title>
-  <meta property="og:title" content="Coding For Life" />
-  <meta name="twitter:title" content="Coding For Life" />
+  <title>Slime Connect to MultipleLisps</title>
+  <meta property="og:title" content="Slime Connect to MultipleLisps" />
+  <meta name="twitter:title" content="Slime Connect to MultipleLisps" />
+  <meta name="description" content="When you are using slime to connect emacs the default &rsquo;M-x slime&rsquo; will connect to local instance of CommonLisp. But If you want to connect to Lisps in different machine you can use slime feature called
+ M-x slime-connect
+ Inorder to do that we need start CommonLisp server.
+Swank Server You can start another local instance or start swank server on different machine.
+Starting Local Instance of Lisp  (ql:quickload &#34;swank&#34;) (swank:create-server :port 4005) Starting Remote Instance via SSH In order to start Lisp instance on remote machine we need to set &lsquo;loopback-interface&rsquo; to remote-ip address.">
+  <meta property="og:description" content="When you are using slime to connect emacs the default &rsquo;M-x slime&rsquo; will connect to local instance of CommonLisp. But If you want to connect to Lisps in different machine you can use slime feature called
+ M-x slime-connect
+ Inorder to do that we need start CommonLisp server.
+Swank Server You can start another local instance or start swank server on different machine.
+Starting Local Instance of Lisp  (ql:quickload &#34;swank&#34;) (swank:create-server :port 4005) Starting Remote Instance via SSH In order to start Lisp instance on remote machine we need to set &lsquo;loopback-interface&rsquo; to remote-ip address.">
+  <meta name="twitter:description" content="When you are using slime to connect emacs the default &rsquo;M-x slime&rsquo; will connect to local instance of CommonLisp. But If you want to connect to Lisps in different machine you can use slime …">
   <meta name="author" content="Tamilselvan.Rangasami"/>
   <link href='https://prtamil.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://prtamil.github.io/img/917197.png" />
   <meta name="twitter:image" content="https://prtamil.github.io/img/917197.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://prtamil.github.io/" />
+  <meta property="og:url" content="https://prtamil.github.io/post/2016-11-19-slime/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Coding For Life" />
 
   <meta name="generator" content="Hugo 0.34" />
-  <link rel="canonical" href="https://prtamil.github.io/" />
+  <link rel="canonical" href="https://prtamil.github.io/post/2016-11-19-slime/" />
   <link rel="alternate" href="https://prtamil.github.io/index.xml" type="application/rss+xml" title="Coding For Life">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -156,40 +167,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1>Coding For Life</h1>
-                
-                  
-                    <hr class="small">
-                    <span class="page-subheading">My Programming PlayGround...</span>
-                  
+            <div class="post-heading">
+              <h1>Slime Connect to MultipleLisps</h1>
                 
                 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-    
-  <div role="main" class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-
-        <div class="posts-list">
-          
-          
-            <article class="post-preview">
-              <a href="https://prtamil.github.io/post/2016-11-19-slime/">
-                <h2 class="post-title">Slime Connect to MultipleLisps</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
+                  <span class="post-meta">
   
   
   <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 19, 2016
@@ -202,76 +184,84 @@
 </span>
 
 
-              <div class="post-entry">
                 
-                  When you are using slime to connect emacs the default &rsquo;M-x slime&rsquo; will connect to local instance of CommonLisp. But If you want to connect to Lisps in different machine you can use slime feature called
- M-x slime-connect
- Inorder to do that we need start CommonLisp server.
-Swank Server You can start another local instance or start swank server on different machine.
-Starting Local Instance of Lisp  (ql:quickload &#34;swank&#34;) (swank:create-server :port 4005) Starting Remote Instance via SSH In order to start Lisp instance on remote machine we need to set &lsquo;loopback-interface&rsquo; to remote-ip address.
-                  <a href="https://prtamil.github.io/post/2016-11-19-slime/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                
-                  #<a href="https://prtamil.github.io/tags/commonlisp/">CommonLisp</a>&nbsp;
-                
-                  #<a href="https://prtamil.github.io/tags/setup/">Setup</a>&nbsp;
-                
-                </span>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://prtamil.github.io/post/2016-11-19-javascript-canvas/">
-                <h2 class="post-title">Javascript Canvas Bouncing Balls</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 19, 2016
-  
-  
-  &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 2 minutes (393 words)
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Javascript Canvas tutorial This is my first javascript canvas demo. We will discuss about how to building it.
- no canvas  Toggle Demo    
-Lets start with Simple Vector Class  function Vector(x,y){ this.x = x || 0; this.y = y || 0; } //Add another vector Vector.prototype.add = function(vector) { this.x += vector.x; this.y += vector.y; } //multiply with scalar Vector.prototype.multiplyScalar = function(scalar){ this.x *= scalar; this.
-                  <a href="https://prtamil.github.io/post/2016-11-19-javascript-canvas/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                
-                  #<a href="https://prtamil.github.io/tags/javascript/">Javascript</a>&nbsp;
-                
-                  #<a href="https://prtamil.github.io/tags/graphics/">Graphics</a>&nbsp;
-                
-                  #<a href="https://prtamil.github.io/tags/programming/">Programming</a>&nbsp;
-                
-                </span>
-              
-            </article>
-          
+            </div>
+          </div>
         </div>
-
-        
       </div>
     </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p>When you are using slime to connect emacs the default &rsquo;M-x slime&rsquo; will connect to local
+instance of CommonLisp. But If you want to connect to Lisps in different machine you can
+use slime feature called</p>
+
+<blockquote>
+<p>M-x slime-connect</p>
+</blockquote>
+
+<p>Inorder to do that we need start CommonLisp server.</p>
+
+<h2 id="swank-server">Swank Server</h2>
+
+<p>You can start another local instance or start swank server on different machine.</p>
+
+<h3 id="starting-local-instance-of-lisp">Starting Local Instance of Lisp</h3>
+
+<blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-common-lisp" data-lang="common-lisp">    <span class="p">(</span><span class="nv">ql:quickload</span> <span class="s">&#34;swank&#34;</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">swank:create-server</span> <span class="ss">:port</span> <span class="mi">4005</span><span class="p">)</span></code></pre></div></blockquote>
+
+<h3 id="starting-remote-instance-via-ssh">Starting Remote Instance via SSH</h3>
+
+<p>In order to start Lisp instance on remote machine we need to set &lsquo;<em>loopback-interface</em>&rsquo; to remote-ip address.</p>
+
+<blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-common-lisp" data-lang="common-lisp">    <span class="p">(</span><span class="nv">ql:quickload</span> <span class="s">&#34;swank&#34;</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">setf</span> <span class="nv">swank::*loopback-interface*</span> <span class="s">&#34;192.168.0.5&#34;</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">swank:create-server</span> <span class="ss">:port</span> <span class="mi">4005</span><span class="p">)</span></code></pre></div></blockquote>
+
+<h2 id="connecting-to-different-lisp">Connecting to Different Lisp</h2>
+
+<p>So inorder to connect to different lisp just use</p>
+
+<blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-common-lisp" data-lang="common-lisp">    <span class="nv">M-x</span> <span class="nv">slime-connect</span></code></pre></div></blockquote>
+
+<p>It will ask for IP and port.</p>
+
+<p>Connect and Enjoy</p>
+
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://prtamil.github.io/post/2016-11-19-javascript-canvas/" data-toggle="tooltip" data-placement="top" title="Javascript Canvas Bouncing Balls">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
   </div>
+</div>
 
     <footer>
   <div class="container">

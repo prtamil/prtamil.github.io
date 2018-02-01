@@ -3,56 +3,73 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://prtamil.github.io/archives/</loc>
-    <lastmod>2018-02-01T05:44:44+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://prtamil.github.io/about/</loc>
-    <lastmod>2018-02-01T05:44:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://prtamil.github.io/posts/slime/</loc>
+    <loc>https://prtamil.github.io/post/2016-11-19-slime/</loc>
     <lastmod>2016-11-19T12:46:45+12:30</lastmod>
   </url>
   
   <url>
-    <loc>http://prtamil.github.io/posts/javscript-canvas/</loc>
+    <loc>https://prtamil.github.io/post/2016-11-19-javascript-canvas/</loc>
     <lastmod>2016-11-19T12:46:43+12:30</lastmod>
   </url>
   
   <url>
-    <loc>http://prtamil.github.io/categories/</loc>
+    <loc>https://prtamil.github.io/</loc>
+    <lastmod>2016-11-19T12:46:45+12:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://prtamil.github.io/page/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://prtamil.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://prtamil.github.io/categories/commonlisp/</loc>
+    <loc>https://prtamil.github.io/tags/commonlisp/</loc>
     <lastmod>2016-11-19T12:46:45+12:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://prtamil.github.io/categories/javascript/</loc>
+    <loc>https://prtamil.github.io/tags/graphics/</loc>
     <lastmod>2016-11-19T12:46:43+12:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://prtamil.github.io/posts/</loc>
+    <loc>https://prtamil.github.io/tags/javascript/</loc>
+    <lastmod>2016-11-19T12:46:43+12:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://prtamil.github.io/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://prtamil.github.io/post/</loc>
     <lastmod>2016-11-19T12:46:45+12:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://prtamil.github.io/</loc>
-    <lastmod>2018-02-01T05:44:44+05:30</lastmod>
+    <loc>https://prtamil.github.io/tags/programming/</loc>
+    <lastmod>2016-11-19T12:46:43+12:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://prtamil.github.io/tags/</loc>
+    <loc>https://prtamil.github.io/tags/setup/</loc>
+    <lastmod>2016-11-19T12:46:45+12:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://prtamil.github.io/tags/</loc>
+    <lastmod>2016-11-19T12:46:45+12:30</lastmod>
     <priority>0</priority>
   </url>
   

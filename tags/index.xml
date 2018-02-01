@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Programming</title>
-    <link>http://prtamil.github.io/tags/</link>
-    <description>Recent content in Tags on Programming</description>
+    <title>Tags on Coding For Life</title>
+    <link>https://prtamil.github.io/tags/</link>
+    <description>Recent content in Tags on Coding For Life</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <managingEditor>prtamil@gmail.com (Tamilselvan.Rangasami)</managingEditor>
+    <webMaster>prtamil@gmail.com (Tamilselvan.Rangasami)</webMaster>
+    <lastBuildDate>Sat, 19 Nov 2016 12:46:45 +1230</lastBuildDate>
     
-        <atom:link href="http://prtamil.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://prtamil.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Commonlisp</title>
+      <link>https://prtamil.github.io/tags/commonlisp/</link>
+      <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
+      <author>prtamil@gmail.com (Tamilselvan.Rangasami)</author>
+      <guid>https://prtamil.github.io/tags/commonlisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>https://prtamil.github.io/tags/graphics/</link>
+      <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
+      <author>prtamil@gmail.com (Tamilselvan.Rangasami)</author>
+      <guid>https://prtamil.github.io/tags/graphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://prtamil.github.io/tags/javascript/</link>
+      <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
+      <author>prtamil@gmail.com (Tamilselvan.Rangasami)</author>
+      <guid>https://prtamil.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://prtamil.github.io/tags/programming/</link>
+      <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
+      <author>prtamil@gmail.com (Tamilselvan.Rangasami)</author>
+      <guid>https://prtamil.github.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>https://prtamil.github.io/tags/setup/</link>
+      <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
+      <author>prtamil@gmail.com (Tamilselvan.Rangasami)</author>
+      <guid>https://prtamil.github.io/tags/setup/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
