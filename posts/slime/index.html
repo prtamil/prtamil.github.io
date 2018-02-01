@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Slime Connect to MultipleLisps</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="Slime Connect to MultipleLisps">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="Slime Connect to MultipleLisps">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="http://example.org/posts/slime/">
+	<meta name="og:site_name" content="Slime Connect to MultipleLisps">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="http://example.org/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="http://example.org/" style="float: left;color:#777;"><strong>Programming</strong></a>
+	
+	&nbsp;&nbsp;<a href="http://example.org/archives/" style="color:#777;"><strong>Archives</strong></a>&nbsp;&nbsp;<a href="http://example.org/about/" style="color:#777;"><strong>About</strong></a>
+	
+	
+	
+	<a href="http://example.org/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>Slime Connect to MultipleLisps <aside></aside></h1>
+  
+
+<p>When you are using slime to connect emacs the default &rsquo;M-x slime&rsquo; will connect to local
+instance of CommonLisp. But If you want to connect to Lisps in different machine you can
+use slime feature called</p>
+
+<blockquote>
+<p>M-x slime-connect</p>
+</blockquote>
+
+<p>Inorder to do that we need start CommonLisp server.</p>
+
+<h2 id="swank-server">Swank Server</h2>
+
+<p>You can start another local instance or start swank server on different machine.</p>
+
+<h3 id="starting-local-instance-of-lisp">Starting Local Instance of Lisp</h3>
+
+<blockquote>
+<pre><code class="language-common-lisp">    (ql:quickload &quot;swank&quot;)
+    (swank:create-server :port 4005)
+</code></pre>
+</blockquote>
+
+<h3 id="starting-remote-instance-via-ssh">Starting Remote Instance via SSH</h3>
+
+<p>In order to start Lisp instance on remote machine we need to set &lsquo;<em>loopback-interface</em>&rsquo; to remote-ip address.</p>
+
+<blockquote>
+<pre><code class="language-common-lisp">    (ql:quickload &quot;swank&quot;)
+    (setf swank::*loopback-interface* &quot;192.168.0.5&quot;)
+    (swank:create-server :port 4005)
+</code></pre>
+</blockquote>
+
+<h2 id="connecting-to-different-lisp">Connecting to Different Lisp</h2>
+
+<p>So inorder to connect to different lisp just use</p>
+
+<blockquote>
+<pre><code class="language-common-lisp">    M-x slime-connect
+</code></pre>
+</blockquote>
+
+<p>It will ask for IP and port.</p>
+
+<p>Connect and Enjoy</p>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>
