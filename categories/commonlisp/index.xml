@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Commonlisp on Programming</title>
-    <link>http://example.org/categories/commonlisp/</link>
+    <link>http://prtamil.github.io/categories/commonlisp/</link>
     <description>Recent content in Commonlisp on Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Nov 2016 12:46:45 +1230</lastBuildDate>
     
-        <atom:link href="http://example.org/categories/commonlisp/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://prtamil.github.io/categories/commonlisp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Slime Connect to MultipleLisps</title>
-      <link>http://example.org/posts/slime/</link>
+      <link>http://prtamil.github.io/posts/slime/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
       
-      <guid>http://example.org/posts/slime/</guid>
+      <guid>http://prtamil.github.io/posts/slime/</guid>
       <description>
 
 &lt;p&gt;When you are using slime to connect emacs the default &amp;rsquo;M-x slime&amp;rsquo; will connect to local

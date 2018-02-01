@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming</title>
-    <link>http://example.org/</link>
+    <link>http://prtamil.github.io/</link>
     <description>Recent content on Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Feb 2018 05:44:44 +0530</lastBuildDate>
     
-        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://prtamil.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Archives</title>
-      <link>http://example.org/archives/</link>
+      <link>http://prtamil.github.io/archives/</link>
       <pubDate>Thu, 01 Feb 2018 05:44:44 +0530</pubDate>
       
-      <guid>http://example.org/archives/</guid>
+      <guid>http://prtamil.github.io/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://example.org/about/</link>
+      <link>http://prtamil.github.io/about/</link>
       <pubDate>Thu, 01 Feb 2018 05:44:33 +0530</pubDate>
       
-      <guid>http://example.org/about/</guid>
+      <guid>http://prtamil.github.io/about/</guid>
       <description>
 
 &lt;h2 id=&#34;sparta&#34;&gt;SPARTA&lt;/h2&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>Slime Connect to MultipleLisps</title>
-      <link>http://example.org/posts/slime/</link>
+      <link>http://prtamil.github.io/posts/slime/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
       
-      <guid>http://example.org/posts/slime/</guid>
+      <guid>http://prtamil.github.io/posts/slime/</guid>
       <description>
 
 &lt;p&gt;When you are using slime to connect emacs the default &amp;rsquo;M-x slime&amp;rsquo; will connect to local
@@ -90,10 +90,10 @@ use slime feature called&lt;/p&gt;
     
     <item>
       <title>Javascript Canvas Bouncing Balls</title>
-      <link>http://example.org/posts/javscript-canvas/</link>
+      <link>http://prtamil.github.io/posts/javscript-canvas/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
       
-      <guid>http://example.org/posts/javscript-canvas/</guid>
+      <guid>http://prtamil.github.io/posts/javscript-canvas/</guid>
       <description>
 
 &lt;h3 id=&#34;javascript-canvas-tutorial&#34;&gt;Javascript Canvas tutorial&lt;/h3&gt;

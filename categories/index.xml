@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Programming</title>
-    <link>http://example.org/categories/</link>
+    <link>http://prtamil.github.io/categories/</link>
     <description>Recent content in Categories on Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-        <atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://prtamil.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Commonlisp</title>
-      <link>http://example.org/categories/commonlisp/</link>
+      <link>http://prtamil.github.io/categories/commonlisp/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
       
-      <guid>http://example.org/categories/commonlisp/</guid>
+      <guid>http://prtamil.github.io/categories/commonlisp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>http://example.org/categories/javascript/</link>
+      <link>http://prtamil.github.io/categories/javascript/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
       
-      <guid>http://example.org/categories/javascript/</guid>
+      <guid>http://prtamil.github.io/categories/javascript/</guid>
       <description></description>
     </item>
     
