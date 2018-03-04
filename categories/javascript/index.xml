@@ -1,80 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming</title>
-    <link>http://prtamil.github.io/</link>
-    <description>Recent content on Programming</description>
+    <title>Javascript on Programming</title>
+    <link>http://prtamil.github.io/categories/javascript/</link>
+    <description>Recent content in Javascript on Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Feb 2018 05:44:44 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 19 Nov 2016 12:46:43 +1230</lastBuildDate>
     
-        <atom:link href="http://prtamil.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://prtamil.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Archives</title>
-      <link>http://prtamil.github.io/archives/</link>
-      <pubDate>Thu, 01 Feb 2018 05:44:44 +0530</pubDate>
-      
-      <guid>http://prtamil.github.io/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Slime Connect to MultipleLisps</title>
-      <link>http://prtamil.github.io/posts/slime/</link>
-      <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
-      
-      <guid>http://prtamil.github.io/posts/slime/</guid>
-      <description>
-
-&lt;p&gt;When you are using slime to connect emacs the default &amp;rsquo;M-x slime&amp;rsquo; will connect to local
-instance of CommonLisp. But If you want to connect to Lisps in different machine you can
-use slime feature called&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;M-x slime-connect&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Inorder to do that we need start CommonLisp server.&lt;/p&gt;
-
-&lt;h2 id=&#34;swank-server&#34;&gt;Swank Server&lt;/h2&gt;
-
-&lt;p&gt;You can start another local instance or start swank server on different machine.&lt;/p&gt;
-
-&lt;h3 id=&#34;starting-local-instance-of-lisp&#34;&gt;Starting Local Instance of Lisp&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;&lt;code class=&#34;language-common-lisp&#34;&gt;    (ql:quickload &amp;quot;swank&amp;quot;)
-    (swank:create-server :port 4005)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;starting-remote-instance-via-ssh&#34;&gt;Starting Remote Instance via SSH&lt;/h3&gt;
-
-&lt;p&gt;In order to start Lisp instance on remote machine we need to set &amp;lsquo;&lt;em&gt;loopback-interface&lt;/em&gt;&amp;rsquo; to remote-ip address.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;&lt;code class=&#34;language-common-lisp&#34;&gt;    (ql:quickload &amp;quot;swank&amp;quot;)
-    (setf swank::*loopback-interface* &amp;quot;192.168.0.5&amp;quot;)
-    (swank:create-server :port 4005)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;connecting-to-different-lisp&#34;&gt;Connecting to Different Lisp&lt;/h2&gt;
-
-&lt;p&gt;So inorder to connect to different lisp just use&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;&lt;code class=&#34;language-common-lisp&#34;&gt;    M-x slime-connect
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It will ask for IP and port.&lt;/p&gt;
-
-&lt;p&gt;Connect and Enjoy&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Javascript Canvas Bouncing Balls</title>
@@ -265,40 +200,6 @@ window.onload = function () {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;So this defines the basic Javascript Canvas Demo&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>http://prtamil.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://prtamil.github.io/about/</guid>
-      <description>&lt;p&gt;My name is&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Tamilselvan.Rangasami.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And I&amp;rsquo;m a&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Programmer&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;by Vocation&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s my&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;other_file.md&#34;&gt;Resume&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Social&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/prtamil&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     
