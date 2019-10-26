@@ -1,89 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Programming</title>
-    <link>http://prtamil.github.io/posts/</link>
-    <description>Recent content in Posts on Programming</description>
+    <title>graphics on Programming</title>
+    <link>http://prtamil.github.io/tags/graphics/</link>
+    <description>Recent content in graphics on Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Oct 2019 11:14:31 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 19 Nov 2016 12:46:43 +1230</lastBuildDate>
     
-        <atom:link href="http://prtamil.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://prtamil.github.io/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Deeds vs Dreams and Programming Language</title>
-      <link>http://prtamil.github.io/posts/deed-vs-dreams/</link>
-      <pubDate>Fri, 25 Oct 2019 11:14:31 +0530</pubDate>
-      
-      <guid>http://prtamil.github.io/posts/deed-vs-dreams/</guid>
-      <description>&lt;p&gt;When we are Young life is filled with possibilities. 
-Possibilities is the mission till we fly away from our parent&#39;s nest. 
-Then Our life is getting more and more complex.  
-Too Complex we confuse this with lots of things. 
-Welcome to the Real Life (Tm)&lt;/p&gt;
-
-&lt;p&gt;This is same in Programming as well. 
-Some languages promise us lots of possibilities but Burns in real world
-Some languages promise us Real Life(Tm). It is depressing as hell.
-So In order to have fun and some profit we need to strike the right balance.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I Think Clojure Strikes The balance&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Just a Thought.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Slime Connect to MultipleLisps</title>
-      <link>http://prtamil.github.io/posts/slime/</link>
-      <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
-      
-      <guid>http://prtamil.github.io/posts/slime/</guid>
-      <description>
-
-&lt;p&gt;When you are using slime to connect emacs the default &amp;rsquo;M-x slime&amp;rsquo; will connect to local
-instance of CommonLisp. But If you want to connect to Lisps in different machine you can
-use slime feature called&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;M-x slime-connect&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Inorder to do that we need start CommonLisp server.&lt;/p&gt;
-
-&lt;h2 id=&#34;swank-server&#34;&gt;Swank Server&lt;/h2&gt;
-
-&lt;p&gt;You can start another local instance or start swank server on different machine.&lt;/p&gt;
-
-&lt;h3 id=&#34;starting-local-instance-of-lisp&#34;&gt;Starting Local Instance of Lisp&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-common-lisp&#34;&gt;    (ql:quickload &amp;quot;swank&amp;quot;)
-    (swank:create-server :port 4005)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;starting-remote-instance-via-ssh&#34;&gt;Starting Remote Instance via SSH&lt;/h3&gt;
-
-&lt;p&gt;In order to start Lisp instance on remote machine we need to set &amp;lsquo;&lt;em&gt;loopback-interface&lt;/em&gt;&amp;rsquo; to remote-ip address.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-common-lisp&#34;&gt;    (ql:quickload &amp;quot;swank&amp;quot;)
-    (setf swank::*loopback-interface* &amp;quot;192.168.0.5&amp;quot;)
-    (swank:create-server :port 4005)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;connecting-to-different-lisp&#34;&gt;Connecting to Different Lisp&lt;/h2&gt;
-
-&lt;p&gt;So inorder to connect to different lisp just use&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-common-lisp&#34;&gt;    M-x slime-connect
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It will ask for IP and port.&lt;/p&gt;
-
-&lt;p&gt;Connect and Enjoy&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Javascript Canvas Bouncing Balls</title>
