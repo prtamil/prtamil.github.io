@@ -1,65 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming</title>
+    <title>Carpe diem</title>
     <link>http://prtamil.github.io/</link>
-    <description>Recent content on Programming</description>
+    <description>Recent content on prtamil.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Oct 2019 11:14:31 +0530</lastBuildDate>
+    <copyright>© 2020, Tamilselvan Rangasami</copyright>
+    <lastBuildDate>Fri, 08 May 2020 19:14:44 +0530</lastBuildDate>
     
-        <atom:link href="http://prtamil.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Posts</title>
-      <link>http://prtamil.github.io/posts/</link>
-      <pubDate>Fri, 25 Oct 2019 11:14:31 +0530</pubDate>
-      
-      <guid>http://prtamil.github.io/posts/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://prtamil.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Archives</title>
-      <link>http://prtamil.github.io/archives/</link>
-      <pubDate>Thu, 01 Feb 2018 05:44:44 +0530</pubDate>
+      <title>O(nlogn) Sorting Algorithms - HeapSort</title>
+      <link>http://prtamil.github.io/posts/on-sort-algorithms-heap/</link>
+      <pubDate>Fri, 08 May 2020 19:14:44 +0530</pubDate>
       
-      <guid>http://prtamil.github.io/archives/</guid>
-      <description></description>
+      <guid>http://prtamil.github.io/posts/on-sort-algorithms-heap/</guid>
+      <description>
+      
+      Introduction Heap Sort Heapsort is a comparison based sorting algorithm. It is invented by JWJ. Williams in 1964. Invent...
+      
+      </description>
     </item>
-    
+    <item>
+      <title>O(nlogn) Sorting Algorithms - MergeSort</title>
+      <link>http://prtamil.github.io/posts/on-sort-algorithms-merge/</link>
+      <pubDate>Wed, 08 Apr 2020 19:14:44 +0530</pubDate>
+      
+      <guid>http://prtamil.github.io/posts/on-sort-algorithms-merge/</guid>
+      <description>
+      
+      Introduction Merge Sort Merge Sort is an efficient, general-purpose, comparison based sorting algorithm. Merge sort is a...
+      
+      </description>
+    </item>
+    <item>
+      <title>O(nlogn) Sorting Algorithms - QuickSort</title>
+      <link>http://prtamil.github.io/posts/on-sort-algorithms-quick/</link>
+      <pubDate>Tue, 07 Apr 2020 19:14:44 +0530</pubDate>
+      
+      <guid>http://prtamil.github.io/posts/on-sort-algorithms-quick/</guid>
+      <description>
+      
+      Introduction This is the series of Sorting Algorithm which has O(nlogn) Average case Complexity. This algorithm is inven...
+      
+      </description>
+    </item>
+    <item>
+      <title>Seive Algorithm to generate PrimeNumbers</title>
+      <link>http://prtamil.github.io/posts/seive-algorithm/</link>
+      <pubDate>Tue, 07 Apr 2020 16:00:32 +0530</pubDate>
+      
+      <guid>http://prtamil.github.io/posts/seive-algorithm/</guid>
+      <description>
+      
+      Sieve of Eratosthenes The Sieve of Erathosthenes is an ancient algorithms to find all prime numbers up to any given limi...
+      
+      </description>
+    </item>
+    <item>
+      <title>Slime Connect to MultipleLisps</title>
+      <link>http://prtamil.github.io/posts/slime/</link>
+      <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
+      
+      <guid>http://prtamil.github.io/posts/slime/</guid>
+      <description>
+      
+      When you are using slime to connect emacs the default ‘M-x slime’ will connect to local instance of CommonLi...
+      
+      </description>
+    </item>
+    <item>
+      <title>Javascript Canvas Bouncing Balls</title>
+      <link>http://prtamil.github.io/posts/javscript-canvas/</link>
+      <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
+      
+      <guid>http://prtamil.github.io/posts/javscript-canvas/</guid>
+      <description>
+      
+      Javascript Canvas tutorial This is my first javascript canvas demo. We will discuss about how to building it.
+Lets start...
+      
+      </description>
+    </item>
     <item>
       <title>About Me</title>
       <link>http://prtamil.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://prtamil.github.io/about/</guid>
-      <description>&lt;p&gt;My name is&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Tamilselvan. P.R.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And I&amp;rsquo;m a&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Programmer&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;by Vocation&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s my&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;other_file.md&#34;&gt;Resume&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Social&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/prtamil&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>
+      
+      I’m Tamilselvan Rangasami and Im currently working as Software Architect. I’m a introvert. From the age of 1...
+      
+      </description>
+    </item>
+    <item>
+      <title>Archives</title>
+      <link>http://prtamil.github.io/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://prtamil.github.io/archives/</guid>
+      <description>
+      
+      
+      
+      </description>
     </item>
     
   </channel>

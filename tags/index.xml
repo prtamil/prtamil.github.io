@@ -1,32 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Programming</title>
+    <title>Tags on Carpe diem</title>
     <link>http://prtamil.github.io/tags/</link>
-    <description>Recent content in Tags on Programming</description>
+    <description>Recent content in Tags on prtamil.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Oct 2019 11:14:31 +0530</lastBuildDate>
+    <copyright>© 2020, Tamilselvan Rangasami</copyright>
+    <lastBuildDate>Sat, 19 Nov 2016 12:46:45 +1230</lastBuildDate>
     
-        <atom:link href="http://prtamil.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>generic</title>
-      <link>http://prtamil.github.io/tags/generic/</link>
-      <pubDate>Fri, 25 Oct 2019 11:14:31 +0530</pubDate>
-      
-      <guid>http://prtamil.github.io/tags/generic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wisdom</title>
-      <link>http://prtamil.github.io/tags/wisdom/</link>
-      <pubDate>Fri, 25 Oct 2019 11:14:31 +0530</pubDate>
-      
-      <guid>http://prtamil.github.io/tags/wisdom/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://prtamil.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>commonlisp</title>
@@ -34,43 +17,59 @@
       <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
       
       <guid>http://prtamil.github.io/tags/commonlisp/</guid>
-      <description></description>
+      <description>
+      
+      
+      
+      </description>
     </item>
-    
     <item>
       <title>ide</title>
       <link>http://prtamil.github.io/tags/ide/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
       
       <guid>http://prtamil.github.io/tags/ide/</guid>
-      <description></description>
+      <description>
+      
+      
+      
+      </description>
     </item>
-    
     <item>
       <title>programming</title>
       <link>http://prtamil.github.io/tags/programming/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:45 +1230</pubDate>
       
       <guid>http://prtamil.github.io/tags/programming/</guid>
-      <description></description>
+      <description>
+      
+      
+      
+      </description>
     </item>
-    
     <item>
       <title>graphics</title>
       <link>http://prtamil.github.io/tags/graphics/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
       
       <guid>http://prtamil.github.io/tags/graphics/</guid>
-      <description></description>
+      <description>
+      
+      
+      
+      </description>
     </item>
-    
     <item>
       <title>javascript</title>
       <link>http://prtamil.github.io/tags/javascript/</link>
       <pubDate>Sat, 19 Nov 2016 12:46:43 +1230</pubDate>
       
       <guid>http://prtamil.github.io/tags/javascript/</guid>
-      <description></description>
+      <description>
+      
+      
+      
+      </description>
     </item>
     
   </channel>
