@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.72.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content=""><meta property="og:title" content="Permutations and Combinations - Implementations" />
+<meta property="og:description" content="Introduction: For Basic Overview of Permutations and Combinations Refer to Permutations and Combinations Overview
+Python Permutation with BackTracking Basic Backtracking algorithm has following structure.
+def BackTrack(L,start,end): if start == end: update globalresult variable else: 1. Do something with L BackTrack(L,start&#43;1,end) 2. Undo the operation with L BackTrack(L,start&#43;1,end) 3. ,,, so on So Permutation Algorithms for Backtracking
+def Permutations(L): result = [] def perm(L, start, end): # backtrack function never returns it updates the results outer scope variables  if start == end: res." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prtamil.github.io/posts/permutations/" />
+<meta property="article:published_time" content="2020-05-28T22:29:33+05:30" />
+<meta property="article:modified_time" content="2020-05-28T22:29:33+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Permutations and Combinations - Implementations"/>
+<meta name="twitter:description" content="Introduction: For Basic Overview of Permutations and Combinations Refer to Permutations and Combinations Overview
+Python Permutation with BackTracking Basic Backtracking algorithm has following structure.
+def BackTrack(L,start,end): if start == end: update globalresult variable else: 1. Do something with L BackTrack(L,start&#43;1,end) 2. Undo the operation with L BackTrack(L,start&#43;1,end) 3. ,,, so on So Permutation Algorithms for Backtracking
+def Permutations(L): result = [] def perm(L, start, end): # backtrack function never returns it updates the results outer scope variables  if start == end: res."/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/all.css" />
+<title>Permutations and Combinations - Implementations | Carpe diem</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="http://prtamil.github.io/">
+      <img src="/images/tamil1.jpg" alt="Carpe diem">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="http://prtamil.github.io/">Carpe diem</a></h2></div>
+  <div id="title-description"><p id="subtitle">Tamilselvan is a Peaceful Programmer.</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/prtamil"><i title="" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/tamil-selvan-ab46927/"><i title="" class="icons fab fa-linkedin"></i></a></li><li><a href="https://www.facebook.com/prtamil"><i title="" class="icons fab fa-facebook"></i></a></li><li><a href="https://twitter.com/prtamil"><i title="" class="icons fab fa-twitter"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/about/">About</a></li>
+        
+        <li><a href="/categories/">Categories</a></li>
+        
+        <li><a href="/posts/">Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="meta">
+
+<div class="date">
+<span class="day">28</span>
+<span class="rest">May 2020</span>
+</div>
+
+</div>
+
+<div class="matter">
+<h1 class="title">Permutations and Combinations - Implementations</h1>
+</div>
+</div>
+<div class="markdown">
+<h2 id="introduction">Introduction:</h2>
+<p>For Basic Overview of Permutations and Combinations
+<a href="http://prtamil.github.io/posts/permcomb/">Refer to Permutations and Combinations Overview</a></p>
+<h2 id="python-permutation-with-backtracking">Python Permutation with BackTracking</h2>
+<p>Basic Backtracking algorithm has following structure.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">   def BackTrack(L,start,end):
+        if start == end:
+            update globalresult variable
+        else:
+            1. Do something with L
+            BackTrack(L,start+1,end)
+            2. Undo the operation with L
+            BackTrack(L,start+1,end)
+            3. ,,, so on
+</code></pre></div><p>So Permutation Algorithms for Backtracking</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">Permutations</span>(L):
+    result <span style="color:#666">=</span> []     
+    <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">perm</span>(L, start, end): <span style="color:#408080;font-style:italic"># backtrack function never returns it updates the results outer scope variables </span>
+        <span style="color:#008000;font-weight:bold">if</span> start <span style="color:#666">==</span> end:
+            res<span style="color:#666">.</span>append(L[:])
+        <span style="color:#008000;font-weight:bold">else</span>:
+            <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(start,end):
+                L[i], L[start] <span style="color:#666">=</span> L[start],L[i]    <span style="color:#408080;font-style:italic"># Do</span>
+                perm(L, start<span style="color:#666">+</span><span style="color:#666">1</span>, end)             <span style="color:#408080;font-style:italic"># Process</span>
+                L[i], L[start] <span style="color:#666">=</span> L[start], L[i]   <span style="color:#408080;font-style:italic"># Undo</span>
+    perm(L, <span style="color:#666">0</span>, <span style="color:#008000">len</span>(L))  <span style="color:#408080;font-style:italic"># backtrack function is a mutable function</span>
+    <span style="color:#008000;font-weight:bold">return</span> res   <span style="color:#408080;font-style:italic"># return the captured result</span>
+</code></pre></div><div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> Permutations([<span style="color:#666">1</span>,<span style="color:#666">2</span>]) 
+ <span style="color:#408080;font-style:italic"># [[1,2],[2,1]]</span>
+</code></pre></div><h2 id="permutation-algorithm-with-lazy-yield-version">Permutation Algorithm with Lazy (Yield version)</h2>
+<p>Permutation Algorithm with Select r elements from n elements</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">Permutations</span>(L,r):
+    <span style="color:#008000;font-weight:bold">if</span> r <span style="color:#666">==</span> <span style="color:#666">1</span>:
+        <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> L:
+            <span style="color:#008000;font-weight:bold">yield</span> [x]
+    <span style="color:#008000;font-weight:bold">else</span>:
+        <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#008000">len</span>(L)):
+            <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> Permutations(L[:i]<span style="color:#666">+</span>L[i<span style="color:#666">+</span><span style="color:#666">1</span>:],r<span style="color:#666">-</span><span style="color:#666">1</span>): <span style="color:#408080;font-style:italic">#recursive</span>
+                <span style="color:#008000;font-weight:bold">yield</span> [L[i]]<span style="color:#666">+</span>x
+</code></pre></div><div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>]
+r <span style="color:#666">=</span> <span style="color:#666">2</span>
+<span style="color:#408080;font-style:italic"># from len(L) items arrange 2 items</span>
+res <span style="color:#666">=</span> <span style="color:#008000">list</span>(Permutations([<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>],<span style="color:#666">2</span>))
+<span style="color:#408080;font-style:italic"># [(1,2), (1,3), (2,1), (2,3), (3,1), (3,2)]</span>
+</code></pre></div><h2 id="permutation-algorithm-using-normal-lists">Permutation Algorithm using Normal lists:</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">Permutations</span>(L,r):
+    <span style="color:#008000;font-weight:bold">if</span> r <span style="color:#666">==</span> <span style="color:#666">1</span>:
+        <span style="color:#008000;font-weight:bold">return</span> [[x] <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> L] <span style="color:#408080;font-style:italic">#Always list of lists</span>
+    <span style="color:#008000;font-weight:bold">else</span>:
+        res <span style="color:#666">=</span> []
+        <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#008000">len</span>(L)):
+            res <span style="color:#666">+=</span> [ [L[i]]<span style="color:#666">+</span>x  <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> Permutations(L[:i]<span style="color:#666">+</span>L[i<span style="color:#666">+</span><span style="color:#666">1</span>:], r<span style="color:#666">-</span><span style="color:#666">1</span>)]
+        <span style="color:#008000;font-weight:bold">return</span> res
+</code></pre></div><div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>]
+r <span style="color:#666">=</span> <span style="color:#666">2</span>
+<span style="color:#408080;font-style:italic"># from len(L) items arrange 2 items</span>
+res <span style="color:#666">=</span> Permutations([<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>],<span style="color:#666">2</span>)
+<span style="color:#408080;font-style:italic"># [(1,2), (1,3), (2,1), (2,3), (3,1), (3,2)]</span>
+</code></pre></div><h2 id="combinational-algorithm-using-lazyyield">Combinational Algorithm using Lazy(Yield)</h2>
+<p>This Combinational Algorithm gives without repetition Combinations.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">Combinations</span>(L,r):
+    <span style="color:#008000;font-weight:bold">if</span> r <span style="color:#666">==</span> <span style="color:#666">1</span>:
+        <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> L:
+            <span style="color:#008000;font-weight:bold">yield</span> [x]
+    <span style="color:#008000;font-weight:bold">else</span>:
+        <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#008000">len</span>(L)):
+            <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> Combinations(L[:i], r<span style="color:#666">-</span><span style="color:#666">1</span>): <span style="color:#408080;font-style:italic">#recursive</span>
+                <span style="color:#008000;font-weight:bold">yield</span> [L[i]]<span style="color:#666">+</span>x
+</code></pre></div><div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>]
+r <span style="color:#666">=</span> <span style="color:#666">2</span>
+<span style="color:#408080;font-style:italic"># from len(L) items choose 2 items</span>
+res <span style="color:#666">=</span> <span style="color:#008000">list</span>(Combinational([<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>],<span style="color:#666">2</span>))
+<span style="color:#408080;font-style:italic"># [ (2,1), (3,1), (3,2)]  #Look ma no repetitions</span>
+</code></pre></div><h2 id="combinational-algorithm-using-normal-lists">Combinational Algorithm using Normal lists:</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">Combinations</span>(L,r):
+    <span style="color:#008000;font-weight:bold">if</span> r <span style="color:#666">==</span> <span style="color:#666">1</span>:
+        <span style="color:#008000;font-weight:bold">return</span> [[x] <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> L] <span style="color:#408080;font-style:italic">#Always list of lists</span>
+    <span style="color:#008000;font-weight:bold">else</span>:
+        res <span style="color:#666">=</span> []
+        <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#008000">len</span>(L)):
+            res <span style="color:#666">+=</span> [ [L[i]]<span style="color:#666">+</span>x  <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> Combinations(L[:i], r<span style="color:#666">-</span><span style="color:#666">1</span>)] <span style="color:#408080;font-style:italic">#simple change dont add L[i+1:] to change permutation to combination</span>
+        <span style="color:#008000;font-weight:bold">return</span> res
+</code></pre></div><div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">L <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>]
+r <span style="color:#666">=</span> <span style="color:#666">2</span>
+<span style="color:#408080;font-style:italic"># from len(L) items choose 2 items</span>
+res <span style="color:#666">=</span> Combinational([<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>],<span style="color:#666">2</span>)
+<span style="color:#408080;font-style:italic"># [ (2,1), (3,1), (3,2)] </span>
+</code></pre></div><h2 id="golang-permutations-with-backtracking">Golang Permutations with Backtracking</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#008000;font-weight:bold">package</span> main                                                          
+
+<span style="color:#008000;font-weight:bold">import</span> (
+    <span style="color:#ba2121">&#34;fmt&#34;</span>
+)
+
+<span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">Permutations</span>(L []<span style="color:#b00040">int</span>) [][]<span style="color:#b00040">int</span> {
+    res <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>) 
+    <span style="color:#408080;font-style:italic">//Pass 2d Array as Reference
+</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#00f">perm</span>(L, <span style="color:#666">0</span>, <span style="color:#008000">len</span>(L), <span style="color:#666">&amp;</span>res)
+    <span style="color:#008000;font-weight:bold">return</span> res
+}
+
+<span style="color:#408080;font-style:italic">//Inner function takes 2dArray Pointer
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">perm</span>(L []<span style="color:#b00040">int</span>, s, e <span style="color:#b00040">int</span>, acc <span style="color:#666">*</span>[][]<span style="color:#b00040">int</span>) {
+    <span style="color:#008000;font-weight:bold">if</span> s <span style="color:#666">==</span> e {
+        <span style="color:#408080;font-style:italic">//Make tempory slice to hold the Values from L
+</span><span style="color:#408080;font-style:italic"></span>        temp <span style="color:#666">:=</span> <span style="color:#008000">make</span>([]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+        temp = <span style="color:#008000">append</span>(temp, L<span style="color:#666">...</span>)
+        <span style="color:#408080;font-style:italic">//Append to 2d Slice pointer
+</span><span style="color:#408080;font-style:italic"></span>        <span style="color:#666">*</span>acc = <span style="color:#008000">append</span>(<span style="color:#666">*</span>acc, [][]<span style="color:#b00040">int</span>{temp}<span style="color:#666">...</span>)
+    } <span style="color:#008000;font-weight:bold">else</span> {
+        <span style="color:#408080;font-style:italic">//Backtracking looop
+</span><span style="color:#408080;font-style:italic"></span>        <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#666">:=</span> s; i &lt; e; i<span style="color:#666">++</span> {
+            L[i], L[s] = L[s], L[i]
+            <span style="color:#00f">perm</span>(L, s<span style="color:#666">+</span><span style="color:#666">1</span>, e, acc)
+            L[i], L[s] = L[s], L[i]
+        }
+    }
+}
+<span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">main</span>() {
+    res <span style="color:#666">:=</span> <span style="color:#00f">Permutations</span>([]<span style="color:#b00040">int</span>{<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>, <span style="color:#666">5</span>})
+    fmt.<span style="color:#00f">Println</span>(res)
+}
+</code></pre></div><h2 id="golang-permutations-using-slices">Golang Permutations using Slices</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#008000;font-weight:bold">package</span> main
+
+<span style="color:#008000;font-weight:bold">import</span> (
+    <span style="color:#ba2121">&#34;fmt&#34;</span>
+)
+
+<span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">Permutations</span>(L []<span style="color:#b00040">int</span>, r <span style="color:#b00040">int</span>) [][]<span style="color:#b00040">int</span> {
+    <span style="color:#008000;font-weight:bold">if</span> r <span style="color:#666">==</span> <span style="color:#666">1</span> {
+        <span style="color:#408080;font-style:italic">//Convert every item in L to List and
+</span><span style="color:#408080;font-style:italic"></span>        <span style="color:#408080;font-style:italic">//Append it to List of List
+</span><span style="color:#408080;font-style:italic"></span>        temp <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+        <span style="color:#008000;font-weight:bold">for</span> _, rr <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> L {
+            t <span style="color:#666">:=</span> <span style="color:#008000">make</span>([]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+            t = <span style="color:#008000">append</span>(t, rr)
+            temp = <span style="color:#008000">append</span>(temp, [][]<span style="color:#b00040">int</span>{t}<span style="color:#666">...</span>)
+        }
+        <span style="color:#008000;font-weight:bold">return</span> temp
+    } <span style="color:#008000;font-weight:bold">else</span> {
+        res <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+        <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#666">:=</span> <span style="color:#666">0</span>; i &lt; <span style="color:#008000">len</span>(L); i<span style="color:#666">++</span> {
+            <span style="color:#408080;font-style:italic">//Create List Without L[i] element
+</span><span style="color:#408080;font-style:italic"></span>            perms <span style="color:#666">:=</span> <span style="color:#008000">make</span>([]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+            perms = <span style="color:#008000">append</span>(perms, L[:i]<span style="color:#666">...</span>)
+            perms = <span style="color:#008000">append</span>(perms, L[i<span style="color:#666">+</span><span style="color:#666">1</span>:]<span style="color:#666">...</span>)
+            <span style="color:#408080;font-style:italic">//Call recursively to Permutations
+</span><span style="color:#408080;font-style:italic"></span>            <span style="color:#008000;font-weight:bold">for</span> _, x <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> <span style="color:#00f">Permutations</span>(perms, r<span style="color:#666">-</span><span style="color:#666">1</span>) {
+                t <span style="color:#666">:=</span> <span style="color:#008000">append</span>(x, L[i])
+                res = <span style="color:#008000">append</span>(res, [][]<span style="color:#b00040">int</span>{t}<span style="color:#666">...</span>)
+            }
+        }
+        <span style="color:#008000;font-weight:bold">return</span> res
+    }
+}
+<span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">main</span>() {
+    res <span style="color:#666">:=</span> <span style="color:#00f">Permutations</span>([]<span style="color:#b00040">int</span>{<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>}, <span style="color:#666">2</span>)
+    fmt.<span style="color:#00f">Println</span>(res, <span style="color:#008000">len</span>(res))
+
+}
+</code></pre></div><h2 id="golang-combinations-using-slices">Golang Combinations using Slices</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#008000;font-weight:bold">package</span> main
+
+<span style="color:#008000;font-weight:bold">import</span> (
+    <span style="color:#ba2121">&#34;fmt&#34;</span>
+)
+
+<span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">Combinations</span>(L []<span style="color:#b00040">int</span>, r <span style="color:#b00040">int</span>) [][]<span style="color:#b00040">int</span> {
+    <span style="color:#008000;font-weight:bold">if</span> r <span style="color:#666">==</span> <span style="color:#666">1</span> {
+        <span style="color:#408080;font-style:italic">//Convert every item in L to List and
+</span><span style="color:#408080;font-style:italic"></span>        <span style="color:#408080;font-style:italic">//Append it to List of List
+</span><span style="color:#408080;font-style:italic"></span>        temp <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+        <span style="color:#008000;font-weight:bold">for</span> _, rr <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> L {
+            t <span style="color:#666">:=</span> <span style="color:#008000">make</span>([]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+            t = <span style="color:#008000">append</span>(t, rr)
+            temp = <span style="color:#008000">append</span>(temp, [][]<span style="color:#b00040">int</span>{t}<span style="color:#666">...</span>)
+        }
+        <span style="color:#008000;font-weight:bold">return</span> temp
+    } <span style="color:#008000;font-weight:bold">else</span> {
+        res <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+        <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#666">:=</span> <span style="color:#666">0</span>; i &lt; <span style="color:#008000">len</span>(L); i<span style="color:#666">++</span> {
+            <span style="color:#408080;font-style:italic">//Take only elements till i 
+</span><span style="color:#408080;font-style:italic"></span>            <span style="color:#408080;font-style:italic">// remember we do not care about position 
+</span><span style="color:#408080;font-style:italic"></span>            perms <span style="color:#666">:=</span> <span style="color:#008000">make</span>([]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+            perms = <span style="color:#008000">append</span>(perms, L[:i]<span style="color:#666">...</span>)
+            <span style="color:#008000;font-weight:bold">for</span> _, x <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> <span style="color:#00f">Combinations</span>(perms, r<span style="color:#666">-</span><span style="color:#666">1</span>) {
+                t <span style="color:#666">:=</span> <span style="color:#008000">append</span>(x, L[i])
+                res = <span style="color:#008000">append</span>(res, [][]<span style="color:#b00040">int</span>{t}<span style="color:#666">...</span>)
+            }
+        }
+        <span style="color:#008000;font-weight:bold">return</span> res
+    }
+}
+<span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">main</span>() {
+    res <span style="color:#666">:=</span> <span style="color:#00f">Combinations</span>([]<span style="color:#b00040">int</span>{<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>}, <span style="color:#666">3</span>)
+    fmt.<span style="color:#00f">Println</span>(res, <span style="color:#008000">len</span>(res))
+
+}
+</code></pre></div><h2 id="fin">Fin.</h2>
+
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+<div class="taxosfloating_left">
+<p>Categories</p>
+</div>
+<div class="termsfloating_right">
+<p>
+
+
+
+<a href="/categories/algorithms/"> algorithms </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/categories/golang/"> golang </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/categories/python/"> python </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearit"></div>
+
+
+
+
+
+
+
+
+
+</div></div>
+
+</main><footer>
+ © 2020, Tamilselvan Rangasami 
+
+
+    
+
+</footer>
+</body>
+</html>

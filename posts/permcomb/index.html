@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.72.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content=""><meta property="og:title" content="Permutation and Combination Overview" />
+<meta property="og:description" content="Introduction: Counting Basics
+ And = Multiply. Or = Addition.  Permutation:  Can be mentioned as Various possible way to arrange the collection where order does matter. It is positional based arrangement. For ex :  it considers [1,2] and [2,1] are different. and it keeps both in the result.   From n elements we pick r elements for permutation P(n,r) = factorial(n)/factorial(r) P(n,r) = n!/r!  Combination:  Selection of Items from collection where order does not matter." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prtamil.github.io/posts/permcomb/" />
+<meta property="article:published_time" content="2020-05-28T07:11:09+05:30" />
+<meta property="article:modified_time" content="2020-05-28T07:11:09+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Permutation and Combination Overview"/>
+<meta name="twitter:description" content="Introduction: Counting Basics
+ And = Multiply. Or = Addition.  Permutation:  Can be mentioned as Various possible way to arrange the collection where order does matter. It is positional based arrangement. For ex :  it considers [1,2] and [2,1] are different. and it keeps both in the result.   From n elements we pick r elements for permutation P(n,r) = factorial(n)/factorial(r) P(n,r) = n!/r!  Combination:  Selection of Items from collection where order does not matter."/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/all.css" />
+<title>Permutation and Combination Overview | Carpe diem</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="http://prtamil.github.io/">
+      <img src="/images/tamil1.jpg" alt="Carpe diem">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="http://prtamil.github.io/">Carpe diem</a></h2></div>
+  <div id="title-description"><p id="subtitle">Tamilselvan is a Peaceful Programmer.</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/prtamil"><i title="" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/tamil-selvan-ab46927/"><i title="" class="icons fab fa-linkedin"></i></a></li><li><a href="https://www.facebook.com/prtamil"><i title="" class="icons fab fa-facebook"></i></a></li><li><a href="https://twitter.com/prtamil"><i title="" class="icons fab fa-twitter"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/about/">About</a></li>
+        
+        <li><a href="/categories/">Categories</a></li>
+        
+        <li><a href="/posts/">Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="meta">
+
+<div class="date">
+<span class="day">28</span>
+<span class="rest">May 2020</span>
+</div>
+
+</div>
+
+<div class="matter">
+<h1 class="title">Permutation and Combination Overview</h1>
+</div>
+</div>
+<div class="markdown">
+<h2 id="introduction">Introduction:</h2>
+<p>Counting Basics</p>
+<ul>
+<li>And = Multiply.</li>
+<li>Or = Addition.</li>
+</ul>
+<h3 id="permutation">Permutation:</h3>
+<ul>
+<li>Can be mentioned as Various possible way to arrange the collection where order does matter.</li>
+<li>It is positional based arrangement.</li>
+<li>For ex :
+<ul>
+<li>it considers <code>[1,2] and [2,1]</code> are <strong>different</strong>.</li>
+<li>and it keeps <strong>both</strong> in the result.</li>
+</ul>
+</li>
+<li>From n elements we pick r elements for permutation</li>
+<li>P(n,r) = factorial(n)/factorial(r)</li>
+<li>P(n,r) = n!/r!</li>
+</ul>
+<h3 id="combination">Combination:</h3>
+<ul>
+<li>Selection of Items from collection where order does not matter.</li>
+<li>We can select r elements from collection of n elements where order does not matter</li>
+<li>for ex :
+<ul>
+<li>it considers <code>[1,2] and [2,1]</code> are  <strong>same</strong></li>
+<li>and keeps only one thing either [1,2] or [2,1] <strong>not both</strong></li>
+</ul>
+</li>
+<li>Gives nCr</li>
+<li>C(n,r) = factorial(n) / (factorial(r) * factorial(n-r))</li>
+<li>C(n,r) = n! / r! * (n-r)!</li>
+</ul>
+<h3 id="variants-of-permutation-and-combinations-there-are-two-variants">Variants of Permutation and Combinations. There are two variants.</h3>
+<ul>
+<li>Without Repetition</li>
+<li>With Repetition.</li>
+</ul>
+<p>Both Permutation and Combinations has these variants.</p>
+<h3 id="what-does-repetition-means">What does Repetition Means</h3>
+<ul>
+<li><strong>With Repetition</strong>
+<ul>
+<li>Adding same elements into items of list</li>
+<li>for Example with repetition permutation
+<ul>
+<li><code>L = [1,2] </code></li>
+<li><code>res =  [(1,1),(2,2),(1,2),(2,1)]</code></li>
+</ul>
+</li>
+<li>With repetition <strong>adds</strong> <code>[(1,1),(2,2)]</code> Which are items made with same elements</li>
+</ul>
+</li>
+<li><strong>Without Repetition</strong>
+<ul>
+<li>removing items made of same elements from the list</li>
+<li>for Example Without repetition permutation
+<ul>
+<li><code>L = [1,2] </code></li>
+<li><code>res =  [(1,2),(2,1)]</code></li>
+</ul>
+</li>
+<li>Without repetition <strong>removes</strong> <code>[(1,1),(2,2)]</code> Which are items made with same elements .</li>
+</ul>
+</li>
+</ul>
+<h3 id="python-itertools-permutation-and-combination">Python Itertools (Permutation and Combination):</h3>
+<p>Order Matters</p>
+<ul>
+<li>Permutation With Repetition  : <code>itertools.product</code></li>
+<li>Permutation Without Repetition : <code>itertools.permutations</code></li>
+</ul>
+<p>Order Does not Matter</p>
+<ul>
+<li>Combination With Repetition : <code>itertools.combinations_with_replacement</code></li>
+<li>Combination Without Repetition : <code>itertools.combinations</code></li>
+</ul>
+<h3 id="python-itertools-permutation-combination-product-usage">Python Itertools Permutation, Combination, Product Usage</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">itertools</span> <span style="color:#008000;font-weight:bold">import</span> product, permutation, combination, combination_with_replacement
+
+s <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>], r <span style="color:#666">=</span> <span style="color:#666">2</span>
+<span style="color:#408080;font-style:italic"># from s pick r </span>
+<span style="color:#408080;font-style:italic"># 1. includes items made of same elements, order does matter. it gives product of sxs. len(s)^2. </span>
+<span style="color:#408080;font-style:italic"># 1.a. product has special case product(list,repeat=r) this gives permutaion with repetition</span>
+<span style="color:#408080;font-style:italic"># 1.b. It produces len(s)^r items , 2^2 = 4, if list has 3 items 3^2=9</span>
+<span style="color:#008000">list</span>(product(s,repeat<span style="color:#666">=</span><span style="color:#666">2</span>)) 
+<span style="color:#408080;font-style:italic"># 3.permutation without repetition. order maters</span>
+<span style="color:#008000">list</span>(permutation(s,<span style="color:#666">2</span>)) 
+<span style="color:#408080;font-style:italic"># 4. combination with repetition order does not matter</span>
+<span style="color:#008000">list</span>(combination_with_replacement(s,<span style="color:#666">2</span>)) 
+<span style="color:#408080;font-style:italic"># 5. combination without repetition, order does not matter.</span>
+<span style="color:#008000">list</span>(combination(s,<span style="color:#666">2</span>)) 
+
+</code></pre></div><h2 id="fin">Fin.</h2>
+
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+<div class="taxosfloating_left">
+<p>Categories</p>
+</div>
+<div class="termsfloating_right">
+<p>
+
+
+
+
+
+<a href="/categories/algorithms/"> algorithms </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/categories/python/"> python </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearit"></div>
+
+
+
+
+
+
+
+
+
+</div></div>
+
+</main><footer>
+ © 2020, Tamilselvan Rangasami 
+
+
+    
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on Carpe diem</title>
+    <link>http://prtamil.github.io/categories/golang/</link>
+    <description>Recent content in golang on prtamil.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020, Tamilselvan Rangasami</copyright>
+    <lastBuildDate>Thu, 28 May 2020 22:29:33 +0530</lastBuildDate>
+    
+    <atom:link href="http://prtamil.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Permutations and Combinations - Implementations</title>
+      <link>http://prtamil.github.io/posts/permutations/</link>
+      <pubDate>Thu, 28 May 2020 22:29:33 +0530</pubDate>
+      
+      <guid>http://prtamil.github.io/posts/permutations/</guid>
+      <description>
+      
+      Introduction: For Basic Overview of Permutations and Combinations Refer to Permutations and Combinations Overview
+Python...
+      
+      </description>
+    </item>
+    <item>
+      <title>Powersets in GoLang- Combinatorial Algorithms</title>
+      <link>http://prtamil.github.io/posts/powersets-go/</link>
+      <pubDate>Mon, 18 May 2020 04:52:31 +0530</pubDate>
+      
+      <guid>http://prtamil.github.io/posts/powersets-go/</guid>
+      <description>
+      
+      Introduction: The power set of any set S is set of all subsets of S, including empty Set. For example
+S = [x,y,z] PowerS...
+      
+      </description>
+    </item>
+    <item>
+      <title>Cartesian Product in Go - Combinatorial Algorithms</title>
+      <link>http://prtamil.github.io/posts/cartesian-product-go/</link>
+      <pubDate>Mon, 18 May 2020 02:30:07 +0530</pubDate>
+      
+      <guid>http://prtamil.github.io/posts/cartesian-product-go/</guid>
+      <description>
+      
+      Introduction: A cartesian product for two sets A and B, denoted AxB is the set of ordered pairs
+A x B = {(a,b) | a belon...
+      
+      </description>
+    </item>
+    
+  </channel>
+</rss>

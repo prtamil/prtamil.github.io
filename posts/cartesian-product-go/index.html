@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.72.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content=""><meta property="og:title" content="Cartesian Product in Go - Combinatorial Algorithms" />
+<meta property="og:description" content="Introduction: A cartesian product for two sets A and B, denoted AxB is the set of ordered pairs
+A x B = {(a,b) | a belongs A and b belongs to B}. for ex: A = {1,2} B ={3,4} AxB = {(1,3),(1,4),(2,3),(2,4)} Golang Cartesian Product package main import ( &#34;fmt&#34; ) //Sample Function for Single List Cartesian product n times // res := Product([]int{1,2,3},2) =&gt; [1,2,3] x [1,2,3] func Product0(input []int, n int) [][]int { //Make atlease single array else won&#39;t go into loop  prod := make([][]int, 1) for i := 1; i &lt;= n; i&#43;&#43; { //next Array is stores intermediate results  next := make([][]int, 0) for _, x := range prod { for _, y := range input { //t = [x&#43;[y]]  //x = [1]  //y = 2  // t = [1,2]  t := make([]int, 0) t = append(t, x." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prtamil.github.io/posts/cartesian-product-go/" />
+<meta property="article:published_time" content="2020-05-18T02:30:07+05:30" />
+<meta property="article:modified_time" content="2020-05-18T02:30:07+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cartesian Product in Go - Combinatorial Algorithms"/>
+<meta name="twitter:description" content="Introduction: A cartesian product for two sets A and B, denoted AxB is the set of ordered pairs
+A x B = {(a,b) | a belongs A and b belongs to B}. for ex: A = {1,2} B ={3,4} AxB = {(1,3),(1,4),(2,3),(2,4)} Golang Cartesian Product package main import ( &#34;fmt&#34; ) //Sample Function for Single List Cartesian product n times // res := Product([]int{1,2,3},2) =&gt; [1,2,3] x [1,2,3] func Product0(input []int, n int) [][]int { //Make atlease single array else won&#39;t go into loop  prod := make([][]int, 1) for i := 1; i &lt;= n; i&#43;&#43; { //next Array is stores intermediate results  next := make([][]int, 0) for _, x := range prod { for _, y := range input { //t = [x&#43;[y]]  //x = [1]  //y = 2  // t = [1,2]  t := make([]int, 0) t = append(t, x."/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/all.css" />
+<title>Cartesian Product in Go - Combinatorial Algorithms | Carpe diem</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="http://prtamil.github.io/">
+      <img src="/images/tamil1.jpg" alt="Carpe diem">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="http://prtamil.github.io/">Carpe diem</a></h2></div>
+  <div id="title-description"><p id="subtitle">Tamilselvan is a Peaceful Programmer.</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/prtamil"><i title="" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/tamil-selvan-ab46927/"><i title="" class="icons fab fa-linkedin"></i></a></li><li><a href="https://www.facebook.com/prtamil"><i title="" class="icons fab fa-facebook"></i></a></li><li><a href="https://twitter.com/prtamil"><i title="" class="icons fab fa-twitter"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/about/">About</a></li>
+        
+        <li><a href="/categories/">Categories</a></li>
+        
+        <li><a href="/posts/">Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="meta">
+
+<div class="date">
+<span class="day">18</span>
+<span class="rest">May 2020</span>
+</div>
+
+</div>
+
+<div class="matter">
+<h1 class="title">Cartesian Product in Go - Combinatorial Algorithms</h1>
+</div>
+</div>
+<div class="markdown">
+<h2 id="introduction">Introduction:</h2>
+<p>A cartesian product for two sets A and B, denoted AxB is the set of ordered pairs</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">A x B <span style="color:#666">=</span> {(a,b) <span style="color:#666">|</span> a belongs A <span style="color:#a2f;font-weight:bold">and</span> b belongs to B}<span style="color:#666">.</span>
+<span style="color:#008000;font-weight:bold">for</span> ex:
+  A <span style="color:#666">=</span> {<span style="color:#666">1</span>,<span style="color:#666">2</span>} B <span style="color:#666">=</span>{<span style="color:#666">3</span>,<span style="color:#666">4</span>}
+    AxB <span style="color:#666">=</span> {(<span style="color:#666">1</span>,<span style="color:#666">3</span>),(<span style="color:#666">1</span>,<span style="color:#666">4</span>),(<span style="color:#666">2</span>,<span style="color:#666">3</span>),(<span style="color:#666">2</span>,<span style="color:#666">4</span>)}
+</code></pre></div><h2 id="golang-cartesian-product">Golang Cartesian Product</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang">
+<span style="color:#008000;font-weight:bold">package</span> main
+
+<span style="color:#008000;font-weight:bold">import</span> (
+    <span style="color:#ba2121">&#34;fmt&#34;</span>
+)
+<span style="color:#408080;font-style:italic">//Sample Function for Single List Cartesian product n times
+</span><span style="color:#408080;font-style:italic">// res := Product([]int{1,2,3},2)  =&gt; [1,2,3] x [1,2,3]
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">Product0</span>(input []<span style="color:#b00040">int</span>, n <span style="color:#b00040">int</span>) [][]<span style="color:#b00040">int</span> {
+    <span style="color:#408080;font-style:italic">//Make atlease single array else won&#39;t go into loop
+</span><span style="color:#408080;font-style:italic"></span>    prod <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">1</span>)
+    <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#666">:=</span> <span style="color:#666">1</span>; i <span style="color:#666">&lt;=</span> n; i<span style="color:#666">++</span> {
+        <span style="color:#408080;font-style:italic">//next Array is stores intermediate results
+</span><span style="color:#408080;font-style:italic"></span>        next <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+        <span style="color:#008000;font-weight:bold">for</span> _, x <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> prod {
+            <span style="color:#008000;font-weight:bold">for</span> _, y <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> input {
+                <span style="color:#408080;font-style:italic">//t = [x+[y]]
+</span><span style="color:#408080;font-style:italic"></span>                <span style="color:#408080;font-style:italic">//x = [1]
+</span><span style="color:#408080;font-style:italic"></span>                <span style="color:#408080;font-style:italic">//y = 2 
+</span><span style="color:#408080;font-style:italic"></span>                <span style="color:#408080;font-style:italic">// t = [1,2]
+</span><span style="color:#408080;font-style:italic"></span>                t <span style="color:#666">:=</span> <span style="color:#008000">make</span>([]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+                t = <span style="color:#008000">append</span>(t, x<span style="color:#666">...</span>)
+                t = <span style="color:#008000">append</span>(t, y)
+                <span style="color:#408080;font-style:italic">//append to next 2d array
+</span><span style="color:#408080;font-style:italic"></span>                next = <span style="color:#008000">append</span>(next, [][]<span style="color:#b00040">int</span>{t}<span style="color:#666">...</span>)
+            }
+        }
+        <span style="color:#408080;font-style:italic">//Assign intermediate next to prod so next loop will have new items
+</span><span style="color:#408080;font-style:italic"></span>        <span style="color:#408080;font-style:italic">//
+</span><span style="color:#408080;font-style:italic"></span>        prod = next
+    }
+    <span style="color:#008000;font-weight:bold">return</span> prod
+}
+
+
+<span style="color:#408080;font-style:italic">//Product([1,2,3],[4,5,6],2) = &gt; [[1,2,3],[4,5,6],[1,2,3],[4,5,6]]
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">Product</span>(n <span style="color:#b00040">int</span>, input <span style="color:#666">...</span>[]<span style="color:#b00040">int</span>) [][]<span style="color:#b00040">int</span> {
+    <span style="color:#408080;font-style:italic">//append all input array into pools
+</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// account repeat value (n) so it repeats n times
+</span><span style="color:#408080;font-style:italic"></span>    pools <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+    <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#666">:=</span> <span style="color:#666">1</span>; i <span style="color:#666">&lt;=</span> n; i<span style="color:#666">++</span> {
+        <span style="color:#008000;font-weight:bold">for</span> _, x <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> input {
+            pools = <span style="color:#008000">append</span>(pools, [][]<span style="color:#b00040">int</span>{x}<span style="color:#666">...</span>)
+        }
+    }
+    prod <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">1</span>)
+    <span style="color:#408080;font-style:italic">//go over each and every pool
+</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#008000;font-weight:bold">for</span> _, pool <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> pools {
+        next <span style="color:#666">:=</span> <span style="color:#008000">make</span>([][]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+        <span style="color:#008000;font-weight:bold">for</span> _, x <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> prod {
+            <span style="color:#008000;font-weight:bold">for</span> _, y <span style="color:#666">:=</span> <span style="color:#008000;font-weight:bold">range</span> pool {
+                <span style="color:#408080;font-style:italic">//x = [1]
+</span><span style="color:#408080;font-style:italic"></span>                <span style="color:#408080;font-style:italic">// y = 2
+</span><span style="color:#408080;font-style:italic"></span>                <span style="color:#408080;font-style:italic">// t = [1,2]
+</span><span style="color:#408080;font-style:italic"></span>                t <span style="color:#666">:=</span> <span style="color:#008000">make</span>([]<span style="color:#b00040">int</span>, <span style="color:#666">0</span>)
+                t = <span style="color:#008000">append</span>(t, x<span style="color:#666">...</span>)
+                t = <span style="color:#008000">append</span>(t, y)
+                next = <span style="color:#008000">append</span>(next, [][]<span style="color:#b00040">int</span>{t}<span style="color:#666">...</span>)
+            }
+        }
+        <span style="color:#408080;font-style:italic">//make prod = intermediate array next
+</span><span style="color:#408080;font-style:italic"></span>        prod = next
+    }
+    <span style="color:#008000;font-weight:bold">return</span> prod
+}
+
+<span style="color:#008000;font-weight:bold">func</span> <span style="color:#00f">main</span>() {
+
+    f <span style="color:#666">:=</span> []<span style="color:#b00040">int</span>{<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>}
+    s <span style="color:#666">:=</span> []<span style="color:#b00040">int</span>{<span style="color:#666">4</span>, <span style="color:#666">5</span>, <span style="color:#666">6</span>}
+
+    res <span style="color:#666">:=</span> <span style="color:#00f">Product</span>(<span style="color:#666">2</span>, f, s)
+    fmt.<span style="color:#00f">Println</span>(<span style="color:#ba2121">&#34;res -&gt; &#34;</span>, res)
+
+}
+
+</code></pre></div><h2 id="fin">Fin.</h2>
+
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+<div class="taxosfloating_left">
+<p>Categories</p>
+</div>
+<div class="termsfloating_right">
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/categories/algorithms/"> algorithms </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/categories/golang/"> golang </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearit"></div>
+
+
+
+
+
+
+
+
+
+</div></div>
+
+</main><footer>
+ © 2020, Tamilselvan Rangasami 
+
+
+    
+
+</footer>
+</body>
+</html>

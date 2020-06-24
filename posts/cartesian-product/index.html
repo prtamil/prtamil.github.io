@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.72.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content=""><meta property="og:title" content="Cartesian Product - Combinatorial Algorithms" />
+<meta property="og:description" content="Introduction: A cartesian product for two sets A and B, denoted AxB is the set of ordered pairs
+A x B = {(a,b) | a belongs A and b belongs to B}. for ex: A = {1,2} B ={3,4} AxB = {(1,3),(1,4),(2,3),(2,4)} Python Code: Simple Example: A = [1,2,3] B = [3,4,5] product = [[a,b] for a in A for b in B] This code gives cartesian product on two Lists" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://prtamil.github.io/posts/cartesian-product/" />
+<meta property="article:published_time" content="2020-05-18T02:30:07+05:30" />
+<meta property="article:modified_time" content="2020-05-18T02:30:07+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cartesian Product - Combinatorial Algorithms"/>
+<meta name="twitter:description" content="Introduction: A cartesian product for two sets A and B, denoted AxB is the set of ordered pairs
+A x B = {(a,b) | a belongs A and b belongs to B}. for ex: A = {1,2} B ={3,4} AxB = {(1,3),(1,4),(2,3),(2,4)} Python Code: Simple Example: A = [1,2,3] B = [3,4,5] product = [[a,b] for a in A for b in B] This code gives cartesian product on two Lists"/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="http://prtamil.github.io/css/all.css" />
+<title>Cartesian Product - Combinatorial Algorithms | Carpe diem</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="http://prtamil.github.io/">
+      <img src="/images/tamil1.jpg" alt="Carpe diem">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="http://prtamil.github.io/">Carpe diem</a></h2></div>
+  <div id="title-description"><p id="subtitle">Tamilselvan is a Peaceful Programmer.</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/prtamil"><i title="" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/tamil-selvan-ab46927/"><i title="" class="icons fab fa-linkedin"></i></a></li><li><a href="https://www.facebook.com/prtamil"><i title="" class="icons fab fa-facebook"></i></a></li><li><a href="https://twitter.com/prtamil"><i title="" class="icons fab fa-twitter"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/about/">About</a></li>
+        
+        <li><a href="/categories/">Categories</a></li>
+        
+        <li><a href="/posts/">Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="meta">
+
+<div class="date">
+<span class="day">18</span>
+<span class="rest">May 2020</span>
+</div>
+
+</div>
+
+<div class="matter">
+<h1 class="title">Cartesian Product - Combinatorial Algorithms</h1>
+</div>
+</div>
+<div class="markdown">
+<h2 id="introduction">Introduction:</h2>
+<p>A cartesian product for two sets A and B, denoted AxB is the set of ordered pairs</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">A x B <span style="color:#666">=</span> {(a,b) <span style="color:#666">|</span> a belongs A <span style="color:#a2f;font-weight:bold">and</span> b belongs to B}<span style="color:#666">.</span>
+<span style="color:#008000;font-weight:bold">for</span> ex:
+  A <span style="color:#666">=</span> {<span style="color:#666">1</span>,<span style="color:#666">2</span>} B <span style="color:#666">=</span>{<span style="color:#666">3</span>,<span style="color:#666">4</span>}
+    AxB <span style="color:#666">=</span> {(<span style="color:#666">1</span>,<span style="color:#666">3</span>),(<span style="color:#666">1</span>,<span style="color:#666">4</span>),(<span style="color:#666">2</span>,<span style="color:#666">3</span>),(<span style="color:#666">2</span>,<span style="color:#666">4</span>)}
+</code></pre></div><h3 id="python-code">Python Code:</h3>
+<h4 id="simple-example">Simple Example:</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">A <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>]
+B <span style="color:#666">=</span> [<span style="color:#666">3</span>,<span style="color:#666">4</span>,<span style="color:#666">5</span>]
+product <span style="color:#666">=</span> [[a,b] <span style="color:#008000;font-weight:bold">for</span> a <span style="color:#a2f;font-weight:bold">in</span> A <span style="color:#008000;font-weight:bold">for</span> b <span style="color:#a2f;font-weight:bold">in</span> B]
+</code></pre></div><p>This code gives cartesian product on two Lists</p>
+<h4 id="itertools-product">itertools Product:</h4>
+<p>Python itertools module has product function has following signature.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">itertools<span style="color:#666">.</span>product(<span style="color:#666">*</span>iterables, repeat<span style="color:#666">=</span><span style="color:#666">1</span>)
+iterables <span style="color:#666">=&gt;</span> List of sets
+repeat <span style="color:#666">=&gt;</span> Specifiy Num of iterations 
+   <span style="color:#008000;font-weight:bold">for</span> example:
+      A <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>]
+      B <span style="color:#666">=</span> [<span style="color:#666">3</span>,<span style="color:#666">4</span>]
+      res <span style="color:#666">=</span> <span style="color:#008000">list</span>(itertools<span style="color:#666">.</span>product(A,B))
+      <span style="color:#408080;font-style:italic">#res = [(1,3),(1,4),(2,3),(2,4)]</span>
+
+the meaning of repeat
+
+      A <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>,<span style="color:#666">3</span>]
+      B <span style="color:#666">=</span> [<span style="color:#666">4</span>,<span style="color:#666">5</span>,<span style="color:#666">6</span>]
+      itertools<span style="color:#666">.</span>product(A,repeat<span style="color:#666">=</span><span style="color:#666">4</span>) <span style="color:#666">=</span> itertools<span style="color:#666">.</span>product(A,A,A,A)
+      itertools<span style="color:#666">.</span>product(A,B,repeat<span style="color:#666">=</span><span style="color:#666">4</span>) <span style="color:#666">=</span> itertools<span style="color:#666">.</span>product(A,B,A,B,A,B,A,B)
+</code></pre></div><p>How itertools implemented in Standard Library</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">product</span>(<span style="color:#666">*</span>args, repeat<span style="color:#666">=</span><span style="color:#666">1</span>):
+    pools <span style="color:#666">=</span> [<span style="color:#008000">tuple</span>(pool) <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> args] <span style="color:#666">*</span> repeat
+    result <span style="color:#666">=</span> [[]]
+    <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> pools:
+        result <span style="color:#666">=</span> [x<span style="color:#666">+</span>[y] <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> result <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> pool]
+    <span style="color:#008000;font-weight:bold">for</span> prod <span style="color:#a2f;font-weight:bold">in</span> result:
+        <span style="color:#008000;font-weight:bold">yield</span> <span style="color:#008000">tuple</span>(prod)
+</code></pre></div><p>Lots of things packed in the above small code.</p>
+<h4 id="detail-explanation-of-itertoolproduct-implementation">Detail explanation of itertool.product implementation:</h4>
+<p>Generally Product of Two lists can be as simple as</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">product</span>(A,B):
+    res <span style="color:#666">=</span> []
+    <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> A:
+        <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> B:
+          res<span style="color:#666">.</span>append([x,y])
+    <span style="color:#008000;font-weight:bold">return</span> res
+</code></pre></div><p>Below code is little complex because we are repeating for loops based on r and arrays.
+So the way is create intermediate list hold the intermediate list so you can loop over intermediate list and finally produce final list</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">product</span>(<span style="color:#666">*</span>args,r<span style="color:#666">=</span><span style="color:#666">1</span>):
+    pools <span style="color:#666">=</span> [<span style="color:#008000">tuple</span>(pool) <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> args] <span style="color:#666">*</span> r            <span style="color:#408080;font-style:italic"># ---[1]</span>
+    result <span style="color:#666">=</span> [[]] 
+    <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> pools:                                    <span style="color:#408080;font-style:italic"># ---[2]</span>
+        result <span style="color:#666">=</span> [x<span style="color:#666">+</span>[y] <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> result <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> pool]
+    <span style="color:#008000;font-weight:bold">for</span> prod <span style="color:#a2f;font-weight:bold">in</span> result:                                   <span style="color:#408080;font-style:italic"># ---[3]</span>
+        <span style="color:#008000;font-weight:bold">yield</span> <span style="color:#008000">tuple</span>(prod)
+</code></pre></div><h4 id="1">[1]:</h4>
+<p>it takes arguments as list of lists and convert into tuple of pools
+and it multiples by repeat
+for Example:</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#008000;font-weight:bold">if</span>:
+    A <span style="color:#666">=</span> [<span style="color:#666">1</span>,<span style="color:#666">2</span>]
+    B <span style="color:#666">=</span> [<span style="color:#666">3</span>,<span style="color:#666">4</span>]
+    repeat <span style="color:#666">=</span> <span style="color:#666">2</span> 
+  pools <span style="color:#666">=</span> [(<span style="color:#666">1</span>,<span style="color:#666">2</span>),(<span style="color:#666">3</span>,<span style="color:#666">4</span>)] <span style="color:#666">*</span> repeat
+        <span style="color:#666">=</span> [(<span style="color:#666">1</span>,<span style="color:#666">2</span>),(<span style="color:#666">3</span>,<span style="color:#666">4</span>),(<span style="color:#666">1</span>,<span style="color:#666">2</span>),(<span style="color:#666">3</span>,<span style="color:#666">4</span>)]
+</code></pre></div><h4 id="2">[2]:</h4>
+<p>This second part is tricky to understand it has lots of things going on simple two lines of code.</p>
+<ol>
+<li>We need to construct empty list of list. because the results are always list of lists.</li>
+</ol>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">   result <span style="color:#666">=</span> [[]]
+</code></pre></div><ol start="2">
+<li>3 loops</li>
+</ol>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">   <span style="color:#408080;font-style:italic">#assume we have pools</span>
+   pools <span style="color:#666">=</span> [(<span style="color:#666">1</span>,<span style="color:#666">2</span>),(<span style="color:#666">3</span>,<span style="color:#666">4</span>)]
+   result <span style="color:#666">=</span> [[]]
+   <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> pools:
+      result <span style="color:#666">=</span> [x<span style="color:#666">+</span>[y] <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> result <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> pool]
+      <span style="color:#408080;font-style:italic"># this line is so complex it has hidden intermediate array.</span>
+      <span style="color:#408080;font-style:italic"># this is hardest code i cracked. </span>
+      <span style="color:#408080;font-style:italic"># it took more than 2 days to crack the code.</span>
+
+  <span style="color:#408080;font-style:italic"># The above loop can be simply written like</span>
+  pools <span style="color:#666">=</span> [(<span style="color:#666">1</span>,<span style="color:#666">2</span>),(<span style="color:#666">3</span>,<span style="color:#666">4</span>)]
+  result <span style="color:#666">=</span> [[]]
+  <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> pools:
+      res <span style="color:#666">=</span> []    <span style="color:#408080;font-style:italic"># Temporary array</span>
+      <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> result:
+          <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> pool:
+              res<span style="color:#666">.</span>append(x<span style="color:#666">+</span>[y])
+      result <span style="color:#666">=</span> res <span style="color:#408080;font-style:italic">#self updating array in for loop :(</span>
+  <span style="color:#408080;font-style:italic"># This code is same code as above </span>
+  <span style="color:#408080;font-style:italic"># Lord this was difficult to debug :( May be im not worthy enough sigh...</span>
+</code></pre></div><h4 id="3">[3].</h4>
+<p>Return items convert from list of list to list of tuple.</p>
+<h4 id="simplified-code">Simplified Code.</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">product</span>(<span style="color:#666">*</span>args, repeat<span style="color:#666">=</span><span style="color:#666">1</span>):
+    pools <span style="color:#666">=</span> [<span style="color:#008000">tuple</span>(pool) <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> args] <span style="color:#666">*</span> repeat
+    result <span style="color:#666">=</span> [[]]
+    <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> pools:
+        res <span style="color:#666">=</span> []
+        <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> result:
+            <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> pool:
+                res<span style="color:#666">.</span>append(x<span style="color:#666">+</span>[y])
+        result <span style="color:#666">=</span> res
+    <span style="color:#008000;font-weight:bold">for</span> prod <span style="color:#a2f;font-weight:bold">in</span> result:
+        <span style="color:#008000;font-weight:bold">yield</span> <span style="color:#008000">tuple</span>(prod)
+</code></pre></div><h4 id="super-simplified-code-for-learning">Super Simplified Code for learning</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">product</span>(arr,r<span style="color:#666">=</span><span style="color:#666">1</span>):
+      prod <span style="color:#666">=</span> [[]]
+      <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">1</span>,r<span style="color:#666">+</span><span style="color:#666">1</span>):
+          <span style="color:#008000">next</span> <span style="color:#666">=</span> [[]]
+          <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> prod:
+              <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> arr:
+                  <span style="color:#008000">next</span><span style="color:#666">.</span>append(x<span style="color:#666">+</span>[y])
+          prod <span style="color:#666">=</span> <span style="color:#008000">next</span>
+      <span style="color:#008000;font-weight:bold">return</span> prod
+</code></pre></div><h3 id="verdict">Verdict:</h3>
+<pre><code> Python may look simple but it can be more complex and hidden magic.
+</code></pre>
+<h3 id="lessons-learned">Lessons Learned</h3>
+<p>In-order to convert from list comprehension to loops we need to introduce temporary array</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">     <span style="color:#408080;font-style:italic">#1.</span>
+       res <span style="color:#666">=</span> [x <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">1</span>,<span style="color:#666">6</span>)]
+       <span style="color:#408080;font-style:italic">#loop</span>
+       r <span style="color:#666">=</span> []
+       <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">1</span>,<span style="color:#666">6</span>):
+           r<span style="color:#666">.</span>append(x)
+       res <span style="color:#666">=</span> r
+
+     <span style="color:#408080;font-style:italic">#2.</span>
+       res <span style="color:#666">=</span> [[x,y] <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">1</span>,<span style="color:#666">6</span>) <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">1</span>,<span style="color:#666">6</span>)]
+       <span style="color:#408080;font-style:italic">#loop</span>
+       r <span style="color:#666">=</span> []
+       <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">1</span>,<span style="color:#666">6</span>):
+           <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">1</span>,<span style="color:#666">6</span>):
+               r<span style="color:#666">.</span>append([x,y])
+       res <span style="color:#666">=</span> r
+
+     <span style="color:#408080;font-style:italic">#3.</span>
+       <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> pools:
+          res <span style="color:#666">=</span> [x<span style="color:#666">+</span>[y] <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> res <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> pool]
+       <span style="color:#408080;font-style:italic">#loop</span>
+       <span style="color:#008000;font-weight:bold">for</span> pool <span style="color:#a2f;font-weight:bold">in</span> pools:
+          r <span style="color:#666">=</span> []
+          <span style="color:#008000;font-weight:bold">for</span> x <span style="color:#a2f;font-weight:bold">in</span> res:
+             <span style="color:#008000;font-weight:bold">for</span> y <span style="color:#a2f;font-weight:bold">in</span> pool:
+                 r<span style="color:#666">.</span>append(x<span style="color:#666">+</span>[y])
+          res <span style="color:#666">=</span> r
+</code></pre></div><h3 id="fin">Fin.</h3>
+
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+<div class="taxosfloating_left">
+<p>Categories</p>
+</div>
+<div class="termsfloating_right">
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<a href="/categories/algorithms/"> algorithms </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/categories/python/"> python </a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearit"></div>
+
+
+
+
+
+
+
+
+
+</div></div>
+
+</main><footer>
+ © 2020, Tamilselvan Rangasami 
+
+
+    
+
+</footer>
+</body>
+</html>
